@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useEffect, useRef , useState } from 'react'
-import { assets } from '../assets/assets'
+import { assets } from '../public/assets/assets'
 
 const Navbar = ({isDarkMode , setIsDarkMode }) => {
 

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { assets } from '../assets/assets'
+import { assets } from '../public/assets/assets'
 import { motion } from 'motion/react'
 
 const Header = ({ isDarkMode }) => {
@@ -12,7 +12,7 @@ const Header = ({ isDarkMode }) => {
         transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
       >
         <Image
-          src={assets.profile_img}
+          src={assets.logoImg }
           alt='my-profile-image'
           className='rounded-full w-32 '
         />
@@ -63,7 +63,7 @@ const Header = ({ isDarkMode }) => {
           />
         </motion.a>
         <motion.a
-          href='/sample-resume.pdf'
+          href='public/assets/ruzanna-serobyan-cv.pdf'
           download
           className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 dark:border-white bg-white dark:text-black'
           initial={{ y: 30, opacity: 0 }}
