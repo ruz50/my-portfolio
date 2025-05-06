@@ -36,7 +36,12 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import wave from './hand-icon.png';
-import logoImg from './download.jpg'
+import logoImg from './download.jpg';
+import reactLogo from './logo_dark.svg';
+import nextLogo from './nextjs.png';
+import tailwindLogo from './tailwind.svg';
+import wordpress from './wordpress.svg';
+import materialUi from './materialUi.svg';
 
 export const assets = {
     user_image,
@@ -77,45 +82,55 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     wave,
-    logoImg 
+    logoImg,
+    reactLogo,
+    nextLogo,
+    tailwindLogo,
+    wordpress,
+    materialUi
 };
 
 export const workData = [
     {
         title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        link:'https://www.diginnovain.com/',
+        description: 'Diginnovain is about Automating the Extraction, Scraping, and Structuring of Web Data.',
+        bgImage: '/assets/public/bckk.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Frontend project',
+        link:'https://fakeidanddocuments.com/',
+        description: 'Legal Shop of Fake Documents',
+        bgImage: '/assets/public/bckk.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Frontend project',
+        link:'https://bunnychain.academy/',
+        description: 'BunnyChain Academy is the tech school of the future. ',
+        bgImage: '/assets/public/bckk.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'SEO',
+        link:'https://newcity.am/' ,
+        description: 'NewCity is newly built real estate in Yerevan',
+        bgImage: '/assets/public/bckk.png',
     },
+
+
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web development', description: 'Develop modern, responsive websites that perform seamlessly across all devices and enhance your business\'s online presence.', link: '' },
+    { icon: assets.mobile_icon, title: 'Search Engine Optimization', description: 'Optimize your website to boost search engine rankings, increase traffic, and enhance online visibility, ultimately supporting the growth of your business.', link: '' },
+
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'JavaScript' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Engineering' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.git , assets.reactLogo , assets.nextLogo , assets.tailwindLogo , assets.wordpress , assets.materialUi
 ];

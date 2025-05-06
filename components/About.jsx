@@ -12,54 +12,37 @@ const About = ({ isDarkMode }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <motion.h4
+      <motion.div
         className='text-center mb-2 text-lg font-Ovo'
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         Introduction
-      </motion.h4>
-      <motion.h2
+      </motion.div>
+      <motion.div
         className='text-center text-5xl font-Ovo'
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
         About me
-      </motion.h2>
+      </motion.div>
       <motion.div
-        className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'
+        className='flex w-full flex-col lg:flex-row items-center justify-center gap-20 my-20'
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
+
         <motion.div
-          className='w-64 sm:w-80 rounded-3xl max-w-none'
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-        >
-          <Image
-            src={assets.user_image}
-            alt='user'
-            className='w-full rounded-3xl'
-          />
-        </motion.div>
-        <motion.div
-          className='flex-1'
+          className='flex flex-col items-center justify-center '
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <p className='mb-10 max-w-2xl font-Ovo'>
-            My about me section Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Numquam exercitationem necessitatibus autem
-            deleniti odio, eum eaque quo beatae hic ipsam totam cumque
-            molestias! Ipsa, laborum? Deserunt, nam. Facere quod dolores dicta
-            cupiditate optio, possimus saepe aperiam praesentium aliquam placeat
-            velit totam nesciunt eligendi eum, non, illum accusamus
-            perspiciatis. Atque, consectetur!
+          <p className='mb-10 max-w-2xl font-Ovo text-center'>
+          I'm a front-end developer and SEO specialist. I have a strong interest in creating modern, responsive, and accessible web interfaces. I am always improving my skills in web development and search engine optimization. My goal is to build fast, user-friendly websites that look great and rank well in search engines.
           </p>
           <motion.ul
             className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'
@@ -78,21 +61,21 @@ const About = ({ isDarkMode }) => {
                   alt={title}
                   className='w-7 mt-3'
                 />
-                <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>
+                <div className='my-4 font-semibold text-gray-700 dark:text-white'>
                   {title}
-                </h3>
+                </div>
                 <p className='text-gray-600 text-sm dark:text-white'>
                   {description}
                 </p>
               </motion.li>
             ))}
           </motion.ul>
-          <motion.h4 className='my-6 text-gray-700 font-Ovo dark:text-white'
+          <motion.div className='my-6 text-gray-700 font-Ovo dark:text-white'
           initial={{ opacity: 0 , y: 20}}
           whileInView={{ opacity: 1 , y : 0}}
           transition={{ duration: 1.3 , delay: 0.5}}>
-            Tools I use
-          </motion.h4>
+            Technologies I Work With
+          </motion.div>
           <motion.ul className='flex items-center gap-3 sm:gap-5'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

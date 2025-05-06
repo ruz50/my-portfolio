@@ -12,12 +12,12 @@ const Header = ({ isDarkMode }) => {
         transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
       >
         <Image
-          src={assets.logoImg }
+          src={assets.logoImg}
           alt='my-profile-image'
           className='rounded-full w-32 '
         />
       </motion.div>
-      <motion.h3
+      <motion.div
         className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -25,15 +25,15 @@ const Header = ({ isDarkMode }) => {
       >
         Hi! I'm Ruzanna Serobyan{' '}
         <Image src={assets.wave} alt='wave' className='w-6' />
-      </motion.h3>
-      <motion.h1
+      </motion.div>
+      <motion.div
         className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
       >
         frontend web developer and seo specialist based in Yerevan.
-      </motion.h1>
+      </motion.div>
       <motion.p
         className='max-w-2xl mx-auto font-Ovo'
         initial={{ opacity: 0 }}
@@ -63,14 +63,14 @@ const Header = ({ isDarkMode }) => {
           />
         </motion.a>
         <motion.a
-          href='public/assets/ruzanna-serobyan-cv.pdf'
+          href='/assets/ruzanna-serobyan-cv.pdf'
           download
           className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 dark:border-white bg-white dark:text-black'
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
-          My resume{' '}
+          My resume
           <Image
             src={assets.download_icon}
             alt='download icon'

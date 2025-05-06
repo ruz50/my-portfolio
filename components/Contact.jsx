@@ -38,22 +38,22 @@ const Contact = ({ isDarkMode }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <motion.h4
+      <motion.div
         className='text-center mb-2 text-lg font-Ovo'
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         Connect with me{' '}
-      </motion.h4>
-      <motion.h2
+      </motion.div>
+      <motion.div
         className='text-center text-5xl font-Ovo'
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         Get in touch
-      </motion.h2>
+      </motion.div>
       <motion.p
         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'
         initial={{ opacity: 0 }}
